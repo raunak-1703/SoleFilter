@@ -1,0 +1,87 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px 25px 20px;
+    width: 150px;
+    border-right: 2px solid #e5e5e5;
+    height:100vh ;
+}
+.sidebar-ico{
+   width: 50px;
+   height: 50px;
+   margin-bottom: 10%;
+   
+}
+.categories{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.heading{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.categories input{
+   margin-right: 10px;
+    width: 15px;
+    height: 15px;
+   position: relative;
+}
+.categories input::before{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #d1d1d1;
+}
+.categories input:checked::after {
+ position: absolute;
+ content: '';
+ width: 15px;
+ height: 15px;
+ background-color: #333333;
+ border-radius: 50%;
+}
+.categories input:hover::before {
+    background-color: #c0c0c0;
+}
+#colors-green::before{
+    background-color: green;
+}
+#colors-black::before{
+    background-color: black;
+}
+#colors-blue::before{
+    background-color: blue;
+}
+#colors-white::before{  
+    background-color: white;
+}
+#colors-red::before{  
+    background-color: red;
+}
+#colors-all::before{  
+     background: radial-gradient(circle, red, blue);
+}
+input[name="colors"]:checked::after {
+position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    transform: translate(-56%, -46%);
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+#colors-white:checked::after{
+    background-color: black;
+}

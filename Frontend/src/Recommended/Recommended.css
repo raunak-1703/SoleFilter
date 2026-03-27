@@ -1,0 +1,38 @@
+.rec{
+   margin-left: 150px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+#rec-head{
+    font-weight: 600;
+}
+.btn-container{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.btn{
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  border: 0.6px solid #ccc;
+  border-radius: 5px;
+  color: #323232;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #f2f2f2; 
+  border-color: #bfbfbf;    
+}
+.btn-clicked {
+  padding: 10px 20px;
+  background-color: #e0e0e0; 
+  color: #333;               
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
